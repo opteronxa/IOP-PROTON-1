@@ -225,7 +225,7 @@ public final class PROTON_C_Escuchador extends Thread { //Clase
                 o_Vent.Solicitudes(true);
                 try {
                     x_soc.setSoTimeout(x_ttl[0]*1000);
-                    BASEDATOS.PROTON_C_Protocolo_IO o_ProtoID=new BASEDATOS.PROTON_C_Protocolo_IO(x_soc, x_ack, x_cks, x_wel);
+                    BASEDATOS.PROTON_C_ProtocoloTEST_IO o_ProtoID=new BASEDATOS.PROTON_C_ProtocoloTEST_IO(x_soc, x_ack, x_cks, x_wel);
                     String y_trama=o_ProtoID.Recibir();
                     if (!x_apagando) {
                         switch (y_trama) {

@@ -11,7 +11,7 @@ import java.net.SocketTimeoutException;
  * @author R.Cuevas
  */
     
-public final class PROTON_C_Protocolo_IO extends PROTON_A_Estadisticas {
+public final class PROTON_C_ProtocoloTEST_IO extends PROTON_A_Estadisticas {
  
     //public static boolean x_TPMS;
     private DataInputStream o_Entt=null;
@@ -24,7 +24,7 @@ public final class PROTON_C_Protocolo_IO extends PROTON_A_Estadisticas {
     private int x_psum=0;
     private boolean x_owe;
     
-    public PROTON_C_Protocolo_IO(Socket _soc, boolean _ack, boolean _cks, String _wel) throws Exception {
+    public PROTON_C_ProtocoloTEST_IO(Socket _soc, boolean _ack, boolean _cks, String _wel) throws Exception {
         x_ack=_ack;
         x_cks=_cks;
         x_wel=_wel;

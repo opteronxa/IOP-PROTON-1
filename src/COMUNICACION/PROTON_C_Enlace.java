@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class PROTON_C_Enlace extends Thread {  
     
     //Objetos
-    private final BASEDATOS.PROTON_C_Protocolo_IO o_Proto;
+    private final BASEDATOS.PROTON_C_ProtocoloTEST_IO o_Proto;
     private final COMUNICACION.PROTON_C_Movimientos o_Movimientos;
     private final ArrayBlockingQueue<String> o_Buffer;
     //Variables Gobales
@@ -23,7 +23,7 @@ public class PROTON_C_Enlace extends Thread {
 
     public PROTON_C_Enlace(COMUNICACION.PROTON_C_Movimientos _movi,
                            ArrayBlockingQueue<String> _buffer,
-                           BASEDATOS.PROTON_C_Protocolo_IO _proto,
+                           BASEDATOS.PROTON_C_ProtocoloTEST_IO _proto,
                            String _ip) {
         o_Proto=_proto;
         o_Movimientos=_movi;
